@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi-socketio"
+version = "0.1.0"
+description = "try integrate socketio with fastapi"
+authors = ["BimaAdi"]
+readme = "README.md"
+packages = [{include = "fastapi_socketio"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+python-socketio = "5.7.2"
+websockets = "^10.4"
+redis = "^4.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+ruff = "^0.0.247"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
